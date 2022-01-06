@@ -1,6 +1,20 @@
 #!/usr/bin/env bash
 
+######################%%%%%%%$##############
+sudo apt update
+# base sofewere
+sudo apt install curl git openssh-server net-tools
+#启动ssh服务
+sudo /etc/init.d/ssh start
+#设置开机自启动
+sudo systemctl enable ssh
 
+# 
+sudo apt install -y zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+######################%%%%%%%$##############
 # System-wise settings
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
