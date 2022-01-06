@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+<<<<<<< HEAD
 ######################%%%%%%%$##############
 sudo apt update
 # base sofewere
@@ -15,6 +16,9 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 
 ######################%%%%%%%$##############
+=======
+
+>>>>>>> ecb3d22a4cba859f46e0b1c3c74fc3f1b033c19d
 # System-wise settings
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
