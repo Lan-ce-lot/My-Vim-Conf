@@ -16,13 +16,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 ## Setup my system
 ```bash
-<<<<<<< HEAD
 chmod +x ./lancel_ubuntu_desktop_env.sh
 ./lancel_ubuntu_env.sh
-=======
-chmod +x ./setup.sh ./tmux.sh
-./setup.sh
->>>>>>> ecb3d22a4cba859f46e0b1c3c74fc3f1b033c19d
 ```
 Follow the prompt and finish installing all softwares.
 ```bash
