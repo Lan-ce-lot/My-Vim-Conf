@@ -6,7 +6,7 @@
 sudo apt update
 # ?. Install base sofewere
 # sudo apt install curl git openssh-server net-tools
-
+# sudo apt install gcc g++
 # 3. Install zsh
 sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -40,6 +40,32 @@ sudo apt-get install -y redis-server
 
 
 # 8. Install java
+
+# https://download.oracle.com/otn/java/jdk/8u311-b11/4d5417147a92418ea8b615e228bb6935/jdk-8u311-linux-i586.rpm
+wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
+chmod +x jdk-8u131-linux-x64.rpm
+rpm -ivh jdk-8u131-linux-x64.rpm
+java -version
+
+# Append in the end of '/etc/profile'
+echo  '
+# Java env
+JAVA_HOME=/usr/local/java/jdk1.8.0_131
+JRE_HOME=${JAVA_HOME}/jre
+CLASSPATH=$JAVA_HOME/lib/
+PATH=$PATH:$JAVA_HOME/bin
+export PATH JAVA_HOME JRE_HOME CLASSPATH
+source /etc/profile' >> /etc/profile
+
+
+# JAVA_HOME=/usr/local/java/jdk1.8.0_131
+# JRE_HOME=${JAVA_HOME}/jre
+# CLASSPATH=$JAVA_HOME/lib/
+# PATH=$PATH:$JAVA_HOME/bin
+# export PATH JAVA_HOME JRE_HOME CLASSPATH
+# source /etc/profile
+
+
 
 # 9. Install go
 
