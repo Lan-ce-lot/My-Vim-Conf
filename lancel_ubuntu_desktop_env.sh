@@ -22,6 +22,7 @@ cp -R ./.config ~/
 sudo apt-get install -y python-dev python-pip python3-dev
 sudo apt-get install -y python3-setuptools
 sudo easy_install3 pip
+# sudo apt install python3-pip
 
 # 5. Install Node.js
 curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
@@ -41,29 +42,27 @@ sudo apt-get install -y redis-server
 
 # 8. Install java
 
+sudo apt update
+sudo apt install openjdk-8-jdk
+# Red hot
 # https://download.oracle.com/otn/java/jdk/8u311-b11/4d5417147a92418ea8b615e228bb6935/jdk-8u311-linux-i586.rpm
-wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
-chmod +x jdk-8u131-linux-x64.rpm
-rpm -ivh jdk-8u131-linux-x64.rpm
-java -version
+# wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
+# chmod +x jdk-8u131-linux-x64.rpm
+# rpm -ivh jdk-8u131-linux-x64.rpm
+# java -version
 
-# Append in the end of '/etc/profile'
-echo  '
-# Java env
-JAVA_HOME=/usr/local/java/jdk1.8.0_131
-JRE_HOME=${JAVA_HOME}/jre
-CLASSPATH=$JAVA_HOME/lib/
-PATH=$PATH:$JAVA_HOME/bin
-export PATH JAVA_HOME JRE_HOME CLASSPATH
-source /etc/profile' >> /etc/profile
+# # Append in the end of '/etc/profile'
+# echo -e '
+# \n# Java env\nJAVA_HOME=/usr/java/jdk1.8.0_131\nJRE_HOME=${JAVA_HOME}/jre\nCLASSPATH=$JAVA_HOME/lib/\nPATH=$PATH:$JAVA_HOME/bin\nexport PATH JAVA_HOME JRE_HOME CLASSPATH\nsource /etc/profile\n
+# ' >> /etc/profile
 
 
-# JAVA_HOME=/usr/local/java/jdk1.8.0_131
-# JRE_HOME=${JAVA_HOME}/jre
-# CLASSPATH=$JAVA_HOME/lib/
-# PATH=$PATH:$JAVA_HOME/bin
-# export PATH JAVA_HOME JRE_HOME CLASSPATH
-# source /etc/profile
+# # JAVA_HOME=/usr/local/java/jdk1.8.0_131
+# # JRE_HOME=${JAVA_HOME}/jre
+# # CLASSPATH=$JAVA_HOME/lib/
+# # PATH=$PATH:$JAVA_HOME/bin
+# # export PATH JAVA_HOME JRE_HOME CLASSPATH
+# # source /etc/profile
 
 
 
