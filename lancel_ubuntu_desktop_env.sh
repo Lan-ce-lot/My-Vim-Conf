@@ -67,7 +67,10 @@ sudo apt install openjdk-8-jdk
 
 
 # 9. Install go
+apt install golang
 
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/,direct
 
 # 10. Install MySQL
 
