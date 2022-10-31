@@ -26,13 +26,10 @@ sudo apt-get install -y python-dev python-pip python3-dev
 sudo apt-get install -y python3-setuptools
 sudo easy_install3 pip
 
-
-
 # Install neovim
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install -y neovim
-
 
 # Install vim setup dependencies
 python2 -m pip install --user --upgrade pynvim
