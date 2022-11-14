@@ -32,12 +32,12 @@ npm config set prefix '~/.npm-global'
 npm install -g n
 
 # 6. Install yarn
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update && sudo apt install -y yarn
+# curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+# echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+# sudo apt update && sudo apt install -y yarn
 
 # 7. Install redis
-sudo apt-get install -y redis-server
+# sudo apt-get install -y redis-server
 
 
 # 8. Install java
@@ -67,10 +67,10 @@ sudo apt install openjdk-8-jdk
 
 
 # 9. Install go
-apt install golang
+# apt install golang
 
-go env -w GO111MODULE=on
-go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/,direct
+# go env -w GO111MODULE=on
+# go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/,direct
 
 # 10. Install MySQL
 
